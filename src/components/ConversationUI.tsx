@@ -1,9 +1,9 @@
-
 import { useRef, useEffect } from "react";
 import { useConversation } from "@/contexts/ConversationContext";
 import { MessageBubble } from "./MessageBubble";
 import { Button } from "@/components/ui/button";
 import { Mic, MicOff } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export function ConversationUI() {
   const { messages, isCallActive, toggleCall, isProcessing } = useConversation();
